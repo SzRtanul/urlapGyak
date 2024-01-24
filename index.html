@@ -11,7 +11,16 @@
 </head>
 <body>
     <form action="" method="get">
-        <label for="nevField">Név: </label><input id="nevField" name="nev" type="text"> <input id="nevField" type="button" value="Küld">
+       <fieldset>
+        <legend>A néző adatai</legend>
+        <br><label for="nevField">Név: </label>
+        <input id="nevField" name="nev" type="text">
+        <br> <label for="randID">Filmek száma/hét: </label>
+        <input type="range" id="" name="rang" oninput="this.form.filmSzam.value=this.value">
+        <input type="number" id="rangID" name="filmSzam" oninput="this.form.rang.value=this.value" size="3">
+        <br><input type="datetime-local" name="" id="">
+        <br><input type="submit" value="Küldés">
+       </fieldset>
     </form>
 </body>
 </html>
