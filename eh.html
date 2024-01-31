@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Szabó Roland">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>cd</title>
 </head>
 <body>
-    <ul>
-        <li>Életerő: </li>
-        <li>Ügyesség: </li>
-        <li>Szreencse: </li>
-    </ul>
+    <form action="#" method="post">
+        <fieldset>
+            <legend class="zold-feher">Regisztráció</legend>
+            <div>
+                <label for="felhszID" >Felhasználónév</label>
+                <input type="text" name="felhszName" id="felhszID" aria-placeholder="csak ékezetmentes betűk">
+            </div>
+            <div>
+                <label label for="jelszID">Jelszó</label>
+                <input type="text" name="jelszName" id="felhszID" aria-placeholder="min. 3 karakter">
+            </div>
+            <div>
+                <label label for="emailID">Jelszó</label>
+                <input type="text" name="emailName" id="emailID" aria-placeholder="nincs@nemisvolt.hu">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="zold-feher">Születés</legend>
+            <div>
+                <label for="what">Születési idő</label>
+                <input type="datetime-local" name="szulName" id="what">
+            </div>
+            <fieldset class="szemelyes">
+                <legend class="zold-feher">Személyes</legend>
+                <input type="checkbox" name="" id="angolChk"><label for="angolChk">Angol</label>
+                <input type="checkbox" name="" id="nemetChk"><label for="nemetChk">Német</label>
+                <div>
+                    <label for="szakID">Választott szak</label>
+                    <select name="" id="szakID">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <input type="radio" name="neme" id="ferfiChk"><label for="ferfiChk">Angol</label>
+                <input type="radio" name="neme" id="noChk"><label for="noChk">Német</label>
+            </fieldset>
+        </fieldset>
+        <input class="zold-feher" type="submit" value="Regisztráció">
+    </form>
 </body>
 </html>

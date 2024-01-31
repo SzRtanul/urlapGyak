@@ -1,0 +1,23 @@
+.kotelezo-mezo{
+    content: "*";
+    color: red;
+}
+
+.zold-feher{
+    background-color: chartreuse;
+    color: brown;
+    padding: 5px;
+    border: 1px solid black;
+    font: bold;
+}
+
+.vilkek-sotkek{
+
+}
+
+.szemelyes{
+    display: grid;
+    grid-template-areas: 
+    "angol szakID ferfi"
+    "nemet szakID no";
+}
